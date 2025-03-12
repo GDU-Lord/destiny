@@ -1,0 +1,92 @@
+.score {
+  width: 70%;
+  max-width: 400px;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.score input {
+  width: 100%;
+  text-align: right;
+  background-color: #00000000;
+  border-bottom: 2px solid black;
+  font-size: 30px;
+}
+
+.score input:focus {
+  outline: none;
+  border-bottom: 4px solid black;
+}
+
+.score .char__score-max {
+  font-size: 30px;
+  max-width: max-content;
+  line-height: 50px;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.scale {
+  display: flex;
+  flex-direction: row;
+  gap: 2px;
+  width: 70%;
+  max-width: 400px;
+  margin: auto;
+}
+
+.section table {
+  margin: 10px auto;
+  width: 90%;
+  position: relative;
+}
+
+.section table button {
+  max-width: 100% !important;
+  width: 100% !important;
+  margin: 0px !important;
+}
+
+.section table input {
+  max-width: 100% !important;
+  width: 100% !important;
+  margin: 0px !important;
+  font-size: 14px !important;
+}
+
+.section table .short-input {
+  width: 40px !important;
+  font-size: 20px !important;
+}
+
+.section table textarea {
+  max-width: 100% !important;
+  width: 100% !important;
+  margin: 0px !important;
+  font-size: 16px;
+}
+
+.section table .table-lable {
+  width: 30px;
+}
+
+.char__skill-table .flex-container {
+  display: flex;
+  flex-direction: row;
+  gap: 2px;
+}
+
+.char__skill-table .flex-container button {
+  width: 50px !important;
+}
+
+.char__feat-table .flex-container {
+  display: flex;
+  flex-direction: row;
+  gap: 2px;
+}
+
+.char__feat-table .flex-container button {
+  width: 50px !important;
+}

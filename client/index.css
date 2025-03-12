@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: cadetblue;
+  margin: 0px;
+  padding: 0px;
+}
+
+.hidden {
+  display: none;
+}
+
+.section {
+  width: 80vw;
+  padding: 2vw;
+  margin: auto;
+  text-align: center;
+  background-color: rgb(0, 200, 255);
+  border-bottom: 2px solid cadetblue;
+  position: relative;
+}
+
+@media screen and (max-width: 900px) {
+  .section {
+    width: 100%;
+  }
+}
+
+.menu {
+  min-height: 100vh;
+}
+
+.section h2 {
+  text-align: left;
+  width: 70%;
+  max-width: 400px;
+  margin: 20px auto
+}
+
+.section button {
+  width: 70%;
+  max-width: 400px;
+  height: 40px;
+  font-size: 20px;
+  margin: 10px auto;
+  border: none;
+  background-color:rgb(206, 255, 123);
+  display: block;
+}
+
+.section button:hover {
+  background-color: aquamarine;
+  cursor: pointer;
+}
+
+.section label {
+  display: block;
+  font-size: 20px;
+  text-align: left;
+  width: 70%;
+  max-width: 400px;
+  margin: 10px auto;
+}
+
+.section input {
+  display: block;
+  width: 70%;
+  max-width: 400px;
+  height: 40px;
+  padding: 1vw;
+  border: none;
+  max-width: 400px;
+  font-size: 20px;
+  margin: 10px auto;
+}
+
+.section textarea {
+  resize: none;
+  display: block;
+  width: 70%;
+  max-width: 400px;
+  height: 200px;
+  padding: 1vw;
+  border: none;
+  max-width: 400px;
+  font-size: 20px;
+  margin: 10px auto;
+}
+
+.button-selected {
+  background-color: rgb(255, 199, 58) !important;
+}
+
+.no-top-margin {
+  margin-top: 0px !important;
+}
+
+.no-top-margin > * {
+  margin-top: 1px !important;
+}
+
+.no-bottom-margin {
+  margin-bottom: 0px !important;
+}
+
+.no-bottom-margin > * {
+  margin-bottom: 1px !important;
+}

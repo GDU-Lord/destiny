@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Destiny Core: Лист Персонажа</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <link rel="stylesheet" href="../../index.css">
+  <link rel="stylesheet" href="./index.css">
+  <script defer type="module" src="../../dist/char/index.js"></script>
+</head>
+<body>
+  <div class="section">
+    <h1>Лист Персонажа</h1>
+  </div>
+  <div class="section">
+    <label for="char__name">Ім'я персонажа:</label>
+    <input type="text" id="char__name">
+    <label for="char__name">Ім'я гравця:</label>
+    <input type="text" id="char__playerName">
+    <label for="char__name">Назва передісторії:</label>
+    <input type="text" id="char__backstoryTitle">
+    <button id="char__lock-unlock">Перегляд</button>
+  </div>
+  <div class="section">
+    <h2 id="char__points"></h2>
+    <label for="scale">Шок:</label>
+    <div id="char__shock">
+      <div class="scale no-bottom-margin">
+        <button>0</button>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>4</button>
+      </div>
+      <div class="scale no-top-margin">
+        <button>5</button>
+        <button>6</button>
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+      </div>
+    </div>
+    <label for="scale">Ментальні поранення:</label>
+    <div class="scale" id="char__mentalWounds">
+      <button>0</button>
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <button>4</button>
+      <button>X</button>
+    </div>
+    <label for="scale">Фізичні поранення:</label>
+    <div class="scale" id="char__physicalWounds">
+      <button>0</button>
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <button>4</button>
+      <button>X</button>
+    </div>
+    <h2 id="char__state">Стан:</h2>
+  </div>
+  <div class="section">
+    <label for="char__name">Передісторія:</label>
+    <textarea type="text" id="char__backstory"></textarea>
+    <label for="char__name">Нотатки:</label>
+    <textarea type="text" id="char__notes"></textarea>
+  </div>
+  <div class="section">
+    <h1>Навички</h2>
+    <table name="0" class="char__skill-table">
+      <tbody>
+        <tr>
+          <td class="table-lable">(I)</td>
+          <td colspan="2">
+            <div class="flex-container">
+              <input type="text" name="0" class="skill__level-1">
+              <button>+</button>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="table-lable"></td>
+          <td colspan="2">
+            <button>+ (II)</button>
+          </td>
+        </tr>
+        <tr>
+          <td class="table-lable">(II)</td>
+          <td>
+            <div class="flex-container">
+              <input type="text" name="1" class="skill__level-2">
+              <button>+</button>
+            </div>
+          </td>
+          <td>
+            <div class="flex-container">
+              <input type="text" name="2" class="skill__level-2">
+              <button>+</button>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="table-lable">(III)</td>
+          <td>
+            <div class="flex-container">
+              <input type="text" name="4" class="skill__level-3">
+              <button>+</button>
+            </div>
+          </td>
+          <td>
+            <div class="flex-container">
+              <input type="text" name="5" class="skill__level-3">
+              <button>+</button>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="table-lable"></td>
+          <td>
+            <button>+ (III)</button>
+          </td>
+          <td>
+            <button>+ (III)</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table name="0" class="char__skill-table">
+      <tbody>
+        <tr>
+          <td class="table-lable">(I)</td>
+          <td colspan="2">
+            <div class="flex-container">
+              <input type="text" name="0" class="skill__level-1">
+              <button>+</button>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="table-lable"></td>
+          <td colspan="2">
+            <button>+ (II)</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table>
+      <tbody>
+        <tr>
+          <td class="table-lable"></td>
+          <td>
+            <button>+ (I)</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="section">
+    <h1>Особливості</h1>
+    <table class="char__feat-table">
+      <tbody>
+        <tr>
+          <td>
+            <div class="flex-container">
+              <input type="text" name="0" class="feat-name">
+              <input type="text" value="1" name="0" class="short-input feat-value">
+              <button class="feat-pos button-selected">+</button>
+              <button class="feat-neut">0</button>
+              <button class="feat-neg">-</button>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <textarea name="0" class="feat-text"></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button class="feat-del">ВИДАЛИТИ</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="char__feat-table">
+      <tbody>
+        <tr>
+          <td>
+            <div class="flex-container">
+              <input type="text" name="0" class="feat-name">
+              <input type="text" value="1" name="0" class="short-input feat-value">
+              <button class="feat-pos button-selected">+</button>
+              <button class="feat-neut">0</button>
+              <button class="feat-neg">-</button>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <textarea name="0" class="feat-text"></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button class="feat-del">ВИДАЛИТИ</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="char__feat-table">
+      <tbody>
+        <tr>
+          <td>
+            <button>+</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
