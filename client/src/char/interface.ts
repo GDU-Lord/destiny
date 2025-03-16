@@ -1,4 +1,4 @@
-import { Character } from "./objects.js";
+import { Character, Skill } from "./objects.js";
 
 export class Interface {
 

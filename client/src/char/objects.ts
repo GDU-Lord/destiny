@@ -60,6 +60,10 @@ export class Skill {
     public id: string = uuid()
   ) {}
 
+  add(char: Character) {
+    char.skills[this.id] = this;
+  }
+
 }
 
 export class Feat {
